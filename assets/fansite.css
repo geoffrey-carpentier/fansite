@@ -1,21 +1,85 @@
+/* === fansite.css === */
 
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Variables */
+:root {
+	--bg-light: #f0f0f0;
+	--bg-dark: #121212;
+	--text-main: #222;
+	--text-light: #fff;
+	--highlight: #ffcc00;
+	--font-base: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* ou meilleure pratique: ne cibler que html et body plutot que le caractère universel qui estpeut impacter les perfs*/
-
-/*
-html, body {
-    margin: 0;
-    padding: 0;
+/* == Reset amélioré == */
+html,
+body {
+	margin: 0;
+	padding: 0;
 }
 
 body * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
-*/
 
+/* Body */
+body {
+	font-family: var(--font-base);
+	background-color: var(--bg-light);
+	color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+	background-color: var(--bg-dark);
+	color: var(--text-light);
+	padding: 30px 20px;
+	text-align: center;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation */
+nav ul {
+	display: flex;
+	justify-content: center;
+	gap: 25px;
+	list-style: none;
+	margin-top: 15px;
+}
+
+nav a {
+	color: var(--highlight);
+	text-decoration: none;
+	font-weight: 600;
+	transition: color 0.3s ease;
+}
+
+nav a:hover {
+	color: #fff;
+}
+
+/* Main */
+main {
+	padding: 30px 20px;
+}
+
+/* === Bannière BTC === */
+.banner img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+
+
+/* Footer */
+footer {
+	background-color: var(--bg-dark);
+	color: var(--text-light);
+	text-align: center;
+	padding: 15px;
+	font-size: 0.9em;
+}
