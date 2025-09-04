@@ -1,0 +1,21 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ou meilleure pratique: ne cibler que html et body plutot que le caractère universel qui estpeut impacter les perfs*/
+
+/*
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body * {
+    box-sizing: border-box;
+}
+*/
+
