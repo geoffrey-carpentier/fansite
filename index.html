@@ -1,42 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fansite Bitcoin & Satoshi Nakamoto</title>
-    <link rel="stylesheet" href="./assets/fansite.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Accueil</title>
+    <meta name="description" content="Bitcoin : histoire, Satoshi Nakamoto, blockchain, mining." />
+    <!-- <link rel="icon" href="assets/favicon.ico" />   trouver les .ico-->
+    <link rel="stylesheet" href="./fansite.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- En-tête du site -->
-    <header>
-        <h1>Bitcoin & Satoshi Nakamoto</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="actualites.html">Actualités</a></li>
-                <li><a href="realisations.html">Réalisations</a></li>
-                <li><a href="evenements.html">Événements</a></li>
-                <li><a href="galerie.html">Galerie</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+
+    <header class="site-header">
+        <div class="wrapper">
+            <a class="logo" href="index.html">₿itcoin</a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="satoshi.html">Satoshi</a></li>
+                    <li><a href="histoire.html">Histoire</a></li>
+                    <li><a href="blockchain.html">Blockchain</a></li>
+                    <li><a href="mining.html">Mining</a></li>
+                    <li><a href="extra.html">Extra</a></li>
+
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Contenu principal -->
-    <main>
-        <!-- Bannière BTC  -->
-        <section class="banner">
-            <img src="assets/images/bitcoin-banner.jpg" alt="Illustration du Bitcoin" />
+    <main id="contenu" class="wrapper">
+        <section class="intro">
+            <h1>₿ienvenue </h1>
+            <h2>À propos du projet Bitcoin</h2>
+            <p>Bitcoin est bien plus qu’une monnaie numérique. C’est une révolution silencieuse née en 2009, conçue pour
+                fonctionner sans banque, sans État, et sans visage connu. Son créateur, Satoshi Nakamoto, reste à ce
+                jour introuvable.</p>
+            <p>Ce site vous invite à explorer les fondations de cette technologie radicale : une blockchain publique, un
+                système de minage décentralisé, et un document fondateur — le whitepaper — qui tient en neuf pages mais
+                a changé le monde.</p>
+            <p>Et si vous êtes curieux de savoir quand le prochain bouleversement aura lieu, suivez le
+                <a href="https://www.bitcoinblockhalf.com/" title="Halving Coundown" target="_blank">compte à rebour
+                </a>
+                avant le prochain halving — un événement qui pourrait bien redéfinir le cours du Bitcoin.
+            </p>
         </section>
 
+        <section>
+            <h2>Actus</h2>
+            <article>
+                <h3>Titre de la brève</h3>
+                <p><time datetime="2025-09-05">5 septembre 2025</time> — Résumé de 2-3 lignes…</p>
+                <a class="more" href="#">Lire la suite</a>
+            </article>
+            <!-- 2 autres brèves -->
+        </section>
+
+        <section>
+            <h2 id="video">Vidéo</h2>
+            <figure>
+                <video controls width="720" poster="assets/img/poster.jpg">
+                    <source src="assets/video/extrait.mp4" type="video/mp4" />
+                    <p>Votre navigateur ne supporte pas la vidéo HTML5.</p>
+                </video>
+                <figcaption>Introduction rapide à Bitcoin.</figcaption>
+            </figure>
+        </section>
+
+        <aside>
+            <h2 id="focus">À retenir</h2>
+            <ul>
+                <li>Offre limitée, protocole open-source…</li>
+            </ul>
+        </aside>
+
+        <section>
+            <h2 id="liens">Liens utiles</h2>
+            <ul>
+                <li><a href="https://github.com/prenom-nom/fansite">Code du projet (GitHub)</a></li>
+                <li><a href="https://bitcointalk.org/" rel="external">Bitcoin Forum</a></li>
+                <li><a href="https://bitcoin.org/fr/" rel="external">Bitcoin.org</a></li>
+            </ul>
+        </section>
     </main>
 
-    <!-- Pied de page -->
-    <footer>
-        <p>&copy; 2025 - Fansite Bitcoin. Tous droits réservés.</p>
+    <footer class="site-footer">
+        <div class="wrapper">
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="satoshi.html">Satoshi</a></li>
+                    <li><a href="histoire.html">Histoire</a></li>
+                    <li><a href="blockchain.html">Blockchain</a></li>
+                    <li><a href="mining.html">Mining</a></li>
+                    <li><a href="extra.html">Extra</a></li>
+                </ul>
+            </nav>
+
+            <ul class="social">
+                <li><a href="https://x.com/Bitcoin" title="X" target="_blank" rel="noopener noreferrer">
+                        <img src="assets/icones/x.svg" alt="Logo X"></a> </li>
+                <li><a href="https://www.reddit.com/r/Bitcoin/" title="Reddit" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="assets/icones/reddit.png" alt="Logo Reddit"></a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <p class="legal">
+                • © 2025 – Bitcoin BTC © •<br>
+                Les informations publiées sur ce site sont fournies à titre informatif et éducatif et ne constituent pas
+                un conseil en investissement, ni une
+                recommandation d'investir, <br>
+                Elles
+                Le site ne permet pas la souscription en ligne de produits financiers et ne constitue pas une offre au
+                public<br>
+                <time datetime="09-09-2025">Dernière mise à jour : 8 septembre 2025</time>
+            </p>
+        </div>
     </footer>
 </body>
-</html>
 
+</html>
